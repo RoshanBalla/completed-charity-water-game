@@ -4,12 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Water Quest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <div class="container">
     <h1>Water Quest</h1>
     <p class="game-instructions">Catch the yellow jerry cans, avoid the muddy cans, and score 100 before time runs out.</p>
+    <div class="difficulty-panel">
+      <p class="difficulty-label">Choose Difficulty</p>
+      <div class="difficulty-buttons" role="group" aria-label="Select game difficulty">
+        <button type="button" class="difficulty-btn" data-difficulty="easy">Easy</button>
+        <button type="button" class="difficulty-btn is-selected" data-difficulty="normal">Normal</button>
+        <button type="button" class="difficulty-btn" data-difficulty="hard">Hard</button>
+      </div>
+    </div>
     <div class="stats">
       <p>Score: <span id="score">0</span></p>
       <p>Time Left: <span id="timer">30</span>s</p>
@@ -21,6 +32,10 @@
       <button id="reset-game" type="button">Reset</button>
     </div>
   </div>
+  <footer class="site-footer">
+    <p>Learn more at <a href="https://www.charitywater.org" target="_blank" rel="noopener noreferrer">charitywater.org</a></p>
+    <a class="donate-btn" href="https://www.charitywater.org/donate" target="_blank" rel="noopener noreferrer">Donate Now</a>
+  </footer>
   <div class="confetti-layer" aria-hidden="true"></div>
   <script src="script.js"></script>
 </body>
