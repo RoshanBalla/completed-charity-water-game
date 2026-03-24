@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Water Quest</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Water Quest</h1>
+    <p class="game-instructions">Catch the yellow jerry cans, avoid the muddy cans, and score 100 before time runs out.</p>
+    <div class="stats">
+      <p>Score: <span id="score">0</span></p>
+      <p>Time Left: <span id="timer">30</span>s</p>
+    </div>
+    <div id="achievements" class="achievement" aria-live="polite">Press Start to begin.</div>
+    <div class="game-grid"></div>
+    <div class="button-row">
+      <button id="start-game" type="button">Start Game</button>
+      <button id="reset-game" type="button">Reset</button>
+    </div>
+  </div>
+  <div class="confetti-layer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
